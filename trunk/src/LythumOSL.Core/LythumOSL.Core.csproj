@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{090308C3-AAF1-4DE0-AB37-37CD81680B79}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>LythumOSL.Core</RootNamespace>
+    <AssemblyName>LythumOSL.Core</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>..\..\bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\Converters\BooleanToIntConverter.cs" />
+    <Compile Include="Data\Converters\NullComboConverter.cs" />
+    <Compile Include="Data\Converters\NullToDbNullConverter.cs" />
+    <Compile Include="Data\Converters\StateToBrushConverter.cs" />
+    <Compile Include="Data\Csv.cs" />
+    <Compile Include="Data\Database.cs" />
+    <Compile Include="Data\DataRowItem.cs" />
+    <Compile Include="Data\DataTypes\LoginInfo.cs" />
+    <Compile Include="Data\DateRange.cs" />
+    <Compile Include="Data\DualDictionary.cs" />
+    <Compile Include="Data\Fix.cs" />
+    <Compile Include="Data\Helpers.cs" />
+    <Compile Include="Data\Info\DatabasesInfo.cs" />
+    <Compile Include="Data\Info\DbFieldInfo.cs" />
+    <Compile Include="Data\Info\DbFieldUpdateMode.cs" />
+    <Compile Include="Data\LythumDataColumn.cs" />
+    <Compile Include="Data\LythumDataTable.cs" />
+    <Compile Include="Data\LythumDataTableCache.cs" />
+    <Compile Include="Data\LythumDictionary.cs" />
+    <Compile Include="Data\LythumDictionaryEntry.cs" />
+    <Compile Include="Data\LythumSerializableBase.cs" />
+    <Compile Include="Data\NamedItemsCollection.cs" />
+    <Compile Include="Data\QueriesHolder.cs" />
+    <Compile Include="Data\Sql.cs" />
+    <Compile Include="Data\SqlHelpers.cs" />
+    <Compile Include="Data\Xml\TinyXmlDataTable.cs" />
+    <Compile Include="Data\Xml\Xml.cs" />
+    <Compile Include="Enums\DatabaseTypes.cs" />
+    <Compile Include="ErrorInfo.cs" />
+    <Compile Include="Helpers.cs" />
+    <Compile Include="IO\AppPath.cs" />
+    <Compile Include="IO\File.cs" />
+    <Compile Include="IO\Http.cs" />
+    <Compile Include="IO\SendKeys.cs" />
+    <Compile Include="LythumException.cs" />
+    <Compile Include="Metadata\IColumnListDesc.cs" />
+    <Compile Include="Metadata\IDataAccess.cs" />
+    <Compile Include="Metadata\IDatabaseInfo.cs" />
+    <Compile Include="Metadata\IDataRowItem.cs" />
+    <Compile Include="Metadata\IDbItem.cs" />
+    <Compile Include="Metadata\IDbNamedItem.cs" />
+    <Compile Include="Metadata\IErrorInfo.cs" />
+    <Compile Include="Metadata\IHasQueries.cs" />
+    <Compile Include="Metadata\ILoginInfo.cs" />
+    <Compile Include="Metadata\ILythumBase.cs" />
+    <Compile Include="Metadata\IMessenger.cs" />
+    <Compile Include="Metadata\INamedItem.cs" />
+    <Compile Include="Metadata\IProgressIterator.cs" />
+    <Compile Include="Metadata\IProgressMessenger.cs" />
+    <Compile Include="Metadata\IQueriesHolder.cs" />
+    <Compile Include="Metadata\ISelector.cs" />
+    <Compile Include="Net\Http\HttpAccess.cs" />
+    <Compile Include="Net\Http\HttpAttributes.cs" />
+    <Compile Include="Net\Http\HttpProxySettings.cs" />
+    <Compile Include="Net\Mapi\Mapi.cs" />
+    <Compile Include="Net\Mapi\MapiFileDesc.cs" />
+    <Compile Include="Net\Mapi\MapiMessage.cs" />
+    <Compile Include="Net\Mapi\MapiRecipDesc.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistryAccess.cs" />
+    <Compile Include="Validation.cs" />
+    <Compile Include="Win32\ErrorCodes.cs" />
+    <Compile Include="Win32\GDI.cs" />
+    <Compile Include="Win32\Kernel.cs" />
+    <Compile Include="Win32\Multimedia.cs" />
+    <Compile Include="Win32\NetApi.cs" />
+    <Compile Include="Win32\Shell.cs" />
+    <Compile Include="Win32\User.cs" />
+    <Compile Include="Win32\Win32.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\Converters" />
+    <Folder Include="Data\DataSources" />
+    <Folder Include="Data\DataTypes" />
+    <Folder Include="Data\Info" />
+    <Folder Include="Data\Xml" />
+    <Folder Include="IO" />
+    <Folder Include="Metadata" />
+    <Folder Include="Enums" />
+    <Folder Include="Data" />
+    <Folder Include="Net" />
+    <Folder Include="Net\Http" />
+    <Folder Include="Net\Mapi" />
+    <Folder Include="Win32" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
