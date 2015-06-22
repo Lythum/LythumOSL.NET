@@ -33,6 +33,10 @@ And this concept required to do solutions which in some cases are against curren
 
 I don't care what do they think. As for me priority is to not waste to much of time on achievement of solution. To make, that single developer was able to work efficient and even to rival solo with software development companies. That he not needed to waste to much of time on technologies or their implementation. But it required much more of work in libraries side.
 
+TODO:
+=======
+Still strong code review is needed. As some classes was researched and not used at the end at ll. As i've found eg. different solution.  And some portions of code are commented instead of removal. Maybe should be good to cleanup them.
+
 P.S.
 
 Main rule! Less code = Less bugs! 
