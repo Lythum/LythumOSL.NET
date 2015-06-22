@@ -1,0 +1,3 @@
+Lythum Secure Legacy Webservice - Client library
+
+Inplements client side of .NET HTTPS client via HTTP protocol

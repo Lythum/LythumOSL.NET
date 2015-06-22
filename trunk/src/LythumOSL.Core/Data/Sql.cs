@@ -307,6 +307,7 @@ namespace LythumOSL.Core.Data
 		/// <returns></returns>
 		public DataSet QueryDataSet (string sql, bool closeConnection)
 		{
+#warning todo: not tested, but must work
 			Debug.Print ("Sql::Query: " + sql);
 			Validation.RequireValidString (sql, "sql");
 
@@ -347,7 +348,7 @@ namespace LythumOSL.Core.Data
 
 					// throw exception if it enabled
 					if (_ThrowException)
-						throw new LythumException ("Lythum.Core.Data.Sql.Query [ " + _LastSql + " ]", ex);
+						throw new LythumException ("LythumOSL.Core.Data.Sql.Query [ " + _LastSql + " ]", ex);
 				}
 				finally
 				{
@@ -400,7 +401,7 @@ namespace LythumOSL.Core.Data
 
 					// throw exception if it enabled
 					if (_ThrowException)
-						throw new LythumException ("Lythum.Core.Data.Sql.Query [ " + _LastSql + " ]", ex);
+						throw new LythumException ("LythumOSL.Core.Data.Sql.Query [ " + _LastSql + " ]", ex);
 				}
 				finally
 				{
@@ -500,7 +501,7 @@ namespace LythumOSL.Core.Data
 
 					// throw exception if it enabled
 					if (_ThrowException)
-						throw new LythumException ("Lythum.Core.Data.Sql.Query [ " + _LastSql + " ]", ex);
+						throw new LythumException ("LythumOSL.Core.Data.Sql.Query [ " + _LastSql + " ]", ex);
 				}
 				finally
 				{

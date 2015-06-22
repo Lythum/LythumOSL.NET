@@ -12,12 +12,12 @@ namespace LythumOSL.Core.Data
 	{
 		public virtual string Serialize ()
 		{
-			return Lythum.Core.Data.Xml.Xml.Serialize<T> ((T)this);
+			return LythumOSL.Core.Data.Xml.Xml.Serialize<T> ((T)this);
 		}
 
 		public T Deserialize (string xml)
 		{
-			return Lythum.Core.Data.Xml.Xml.Deserialize<T> (xml);
+			return LythumOSL.Core.Data.Xml.Xml.Deserialize<T> (xml);
 		}
 
 	}

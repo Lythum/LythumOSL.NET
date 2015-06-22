@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Data;
 
-namespace LythumOSL.Core.Data.Converters
+namespace LythumOSL.Wpf.Converters
 {
 	public class BooleanToIntConverter : IValueConverter
 	{

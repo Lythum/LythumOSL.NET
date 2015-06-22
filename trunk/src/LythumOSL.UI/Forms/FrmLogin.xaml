@@ -1,0 +1,55 @@
+﻿<Window x:Class="LythumOSL.UI.Forms.FrmLogin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:res="clr-namespace:LythumOSL.UI.Properties"
+	xmlns:WF="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+	
+    Height="380" Width="406" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" MouseDown="Any_MouseDown">
+    <Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="43*" />
+			<RowDefinition Height="183.804*" />
+			<RowDefinition Height="56.043*" />
+		</Grid.RowDefinitions>
+		<Border Grid.Row="0">
+			<Border.Background>
+				<LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+					<GradientStop Color="White" Offset="0.0" />
+					<GradientStop Color="SteelBlue" Offset="0.20" />
+					<GradientStop Color="SteelBlue" Offset="1.0" />
+				</LinearGradientBrush>
+			</Border.Background>
+			<Label Height="34" Name="LblTitle" Width="380" HorizontalContentAlignment="Center" FontSize="20" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Foreground="White" FontFamily="Lucida Console, Verdana" VerticalContentAlignment="Bottom">Prisijungimas, Ver. 1.00</Label>
+		</Border>
+		<Border Grid.Row="1" Background="SteelBlue">
+		</Border>
+		<Border Grid.Row="2">
+			<Border.Background>
+				<LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+					<GradientStop Color="SteelBlue" Offset="0.0" />
+					<GradientStop Color="SteelBlue" Offset="0.80" />
+					<GradientStop Color="White" Offset="1.0" />
+				</LinearGradientBrush>
+			</Border.Background>
+		</Border>
+		<Button Grid.Row="2" Margin="0,7,13,19" Name="CmdCancel" IsCancel="True"  HorizontalAlignment="Right" Width="102" Height="30.073" VerticalAlignment="Bottom" Foreground="Black"  Content="{x:Static res:Resources.LabelCancel}" />
+		<Button Grid.Row="2" Margin="0,0,121,19" Name="CmdOk" IsDefault="True" HorizontalAlignment="Right" Width="102" Height="30.073" VerticalAlignment="Bottom" Foreground="Black" Click="CmdOk_Click"  Content="{x:Static res:Resources.LabelOk}" />
+		<TabControl Name="TabMain" Margin="12,6,13,6" Grid.Row="1">
+			<TabItem Header="{x:Static res:Resources.LabelUserInfo}" Name="TabLogin" Foreground="Black">
+				<Grid>
+					<TextBox Height="23" Margin="154,41,8,0" Name="TxtLogin" VerticalAlignment="Top" FontFamily="Lucida Console, Verdana" Foreground="SteelBlue" VerticalContentAlignment="Center" />
+					<PasswordBox Margin="154,70,8,0" Name="TxtPassword" Height="22.943" VerticalAlignment="Top" FontFamily="Lucida Console, Verdana" Foreground="SteelBlue" VerticalContentAlignment="Center" />
+					<Label Height="28" HorizontalAlignment="Left" Margin="9.326,41,0,0" Name="LblLogin" VerticalAlignment="Top" Width="120" Content="{x:Static res:Resources.LabelUsername}" />
+					<Label Margin="9.326,70,0,0" Name="LblPassword" Height="27.999" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" Content="{x:Static res:Resources.LabelPassword}" />
+				</Grid>
+			</TabItem>
+			<TabItem Header="{x:Static res:Resources.LabelConnectionInfo}" Name="TabConnection" Foreground="Black">
+				<Grid>
+					<WindowsFormsHost Name="windowsFormsHost1">
+						<WF:PropertyGrid x:Name="PgrInfo"/>
+					</WindowsFormsHost>
+				</Grid>
+			</TabItem>
+		</TabControl>
+	</Grid>
+</Window>

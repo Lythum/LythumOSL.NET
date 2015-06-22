@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="LythumOSL.UI.Controls.LythumPropertyGridItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    >
+    <UserControl.Resources>
+        <!--<ResourceDictionary Source="Themes/Generic.xaml"/>-->
+    </UserControl.Resources>
+    <Grid x:Name="PropertyItemGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="{Binding Path=PropertyName}" Grid.Column="0"/>
+        <TextBox Text="{Binding Path=PropertyValue,Mode=TwoWay}" Grid.Column="1" MouseEnter="TextBox_MouseEnter" />
+    </Grid>
+</UserControl>

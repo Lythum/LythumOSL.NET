@@ -12,7 +12,7 @@ namespace LythumOSL.Core.IO
 		{
 			string retVal = Environment.GetFolderPath (systemFolder);
 
-			retVal += "\\" + Lythum.Core.Helpers.ApplicationName + "\\";
+			retVal += "\\" + LythumOSL.Core.Helpers.ApplicationName + "\\";
 
 			DirectoryInfo di = new DirectoryInfo (retVal);
 

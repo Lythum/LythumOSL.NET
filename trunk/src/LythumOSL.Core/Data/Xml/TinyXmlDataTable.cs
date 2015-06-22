@@ -7,7 +7,7 @@ using System.Xml;
 using System.Xml.Schema;
 using System.Xml.Serialization;
 
-using Lythum.Core;
+using LythumOSL.Core;
 
 namespace LythumOSL.Core.Data.Xml
 {

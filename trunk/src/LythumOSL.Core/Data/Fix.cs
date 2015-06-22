@@ -43,7 +43,7 @@ namespace LythumOSL.Core.Data
 		}
 
 		/// <summary>
-		/// DEPREACED! Use DateTime.ToFrom(), from Lythum.Core.Extensions 
+		/// DEPREACED! Use DateTime.ToFrom(), from LythumOSL.Core.Extensions 
 		/// </summary>
 		/// <param name="date"></param>
 		/// <returns></returns>
@@ -64,7 +64,7 @@ namespace LythumOSL.Core.Data
 
 
 		/// <summary>
-		/// DEPREACED! Use DateTime.ToTo(), from Lythum.Core.Extensions 
+		/// DEPREACED! Use DateTime.ToTo(), from LythumOSL.Core.Extensions 
 		/// </summary>
 		/// <param name="date"></param>
 		/// <returns></returns>
@@ -84,7 +84,7 @@ namespace LythumOSL.Core.Data
 		}
 
 		/// <summary>
-		/// DEPREACED! Use String.ToSqlField(), from Lythum.Core.Extensions 
+		/// DEPREACED! Use String.ToSqlField(), from LythumOSL.Core.Extensions 
 		/// </summary>
 		/// <param name="text"></param>
 		/// <returns></returns>
@@ -101,7 +101,7 @@ namespace LythumOSL.Core.Data
 		}
 
 		/// <summary>
-		/// DEPREACED! Use Boolean.ToInt(), from Lythum.Core.Extensions
+		/// DEPREACED! Use Boolean.ToInt(), from LythumOSL.Core.Extensions
 		/// Converting bool to int
 		/// </summary>
 		/// <param name="value"></param>
@@ -112,7 +112,7 @@ namespace LythumOSL.Core.Data
 		}
 
 		/// <summary>
-		/// DEPREACED! Use Object.ToValueIfEmpty(), from Lythum.Core.Extensions
+		/// DEPREACED! Use Object.ToValueIfEmpty(), from LythumOSL.Core.Extensions
 		/// 
 		/// Check object is null if null return isNullValue parameter as value
 		/// if not null then value.ToString
@@ -126,7 +126,7 @@ namespace LythumOSL.Core.Data
 		}
 
 		/// <summary>
-		/// DEPREACED! Use String.Fix(), from Lythum.Core.Extensions
+		/// DEPREACED! Use String.Fix(), from LythumOSL.Core.Extensions
 		/// 
 		/// Anti injection stuff
 		/// </summary>

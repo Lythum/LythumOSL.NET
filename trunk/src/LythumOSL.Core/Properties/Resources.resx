@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IO_ERROR_FILE_NOT_EXIST" xml:space="preserve">
+    <value>File '{0}' Not exist!</value>
+  </data>
+  <data name="MAPI_MSG_00" xml:space="preserve">
+    <value>OK [0]</value>
+    <comment>OK [0]</comment>
+  </data>
+  <data name="MAPI_MSG_01" xml:space="preserve">
+    <value>User abort [1]</value>
+    <comment>User abort [1]</comment>
+  </data>
+  <data name="MAPI_MSG_02" xml:space="preserve">
+    <value>General MAPI failure [2]</value>
+    <comment>General MAPI failure [2]</comment>
+  </data>
+  <data name="MAPI_MSG_03" xml:space="preserve">
+    <value>MAPI login failure [3]</value>
+    <comment>MAPI login failure [3]</comment>
+  </data>
+  <data name="MAPI_MSG_04" xml:space="preserve">
+    <value>Disk full [4]</value>
+    <comment>Disk full [4]</comment>
+  </data>
+  <data name="MAPI_MSG_05" xml:space="preserve">
+    <value>Insufficient memory [5]</value>
+    <comment>Insufficient memory [5]</comment>
+  </data>
+  <data name="MAPI_MSG_06" xml:space="preserve">
+    <value>Access denied [6]</value>
+    <comment>Access denied [6]</comment>
+  </data>
+  <data name="MAPI_MSG_07" xml:space="preserve">
+    <value>-unknown- [7]</value>
+    <comment>-unknown- [7]</comment>
+  </data>
+  <data name="MAPI_MSG_08" xml:space="preserve">
+    <value>Too many sessions [8]</value>
+    <comment>Too many sessions [8]</comment>
+  </data>
+  <data name="MAPI_MSG_09" xml:space="preserve">
+    <value>Too many files were specified [9]</value>
+    <comment>Too many files were specified [9]</comment>
+  </data>
+  <data name="MAPI_MSG_10" xml:space="preserve">
+    <value>Too many recipients were specified [10]</value>
+    <comment>Too many recipients were specified [10]</comment>
+  </data>
+  <data name="MAPI_MSG_11" xml:space="preserve">
+    <value>A specified attachment was not found [11]</value>
+    <comment>A specified attachment was not found [11]</comment>
+  </data>
+  <data name="MAPI_MSG_12" xml:space="preserve">
+    <value>Attachment open failure [12]</value>
+    <comment>Attachment open failure [12]</comment>
+  </data>
+  <data name="MAPI_MSG_13" xml:space="preserve">
+    <value>Attachment write failure [13]</value>
+    <comment>Attachment write failure [13]</comment>
+  </data>
+  <data name="MAPI_MSG_14" xml:space="preserve">
+    <value>Unknown recipient [14]</value>
+    <comment>Unknown recipient [14]</comment>
+  </data>
+  <data name="MAPI_MSG_15" xml:space="preserve">
+    <value>Bad recipient type [15]</value>
+    <comment>Bad recipient type [15]</comment>
+  </data>
+  <data name="MAPI_MSG_16" xml:space="preserve">
+    <value>No messages [16]</value>
+    <comment>No messages [16]</comment>
+  </data>
+  <data name="MAPI_MSG_17" xml:space="preserve">
+    <value>Invalid message [17]</value>
+    <comment>Invalid message [17]</comment>
+  </data>
+  <data name="MAPI_MSG_18" xml:space="preserve">
+    <value>Text too large [18]</value>
+    <comment>Text too large [18]</comment>
+  </data>
+  <data name="MAPI_MSG_19" xml:space="preserve">
+    <value>Invalid session [19]</value>
+    <comment>Invalid session [19]</comment>
+  </data>
+  <data name="MAPI_MSG_20" xml:space="preserve">
+    <value>Type not supported [20]</value>
+    <comment>Type not supported [20]</comment>
+  </data>
+  <data name="MAPI_MSG_21" xml:space="preserve">
+    <value>A recipient was specified ambiguously [21]</value>
+    <comment>A recipient was specified ambiguously [21]</comment>
+  </data>
+  <data name="MAPI_MSG_22" xml:space="preserve">
+    <value>Message in use [22]</value>
+    <comment>Message in use [22]</comment>
+  </data>
+  <data name="MAPI_MSG_23" xml:space="preserve">
+    <value>Network failure [23]</value>
+    <comment>Network failure [23]</comment>
+  </data>
+  <data name="MAPI_MSG_24" xml:space="preserve">
+    <value>Invalid edit fields [24]</value>
+    <comment>Invalid edit fields [24]</comment>
+  </data>
+  <data name="MAPI_MSG_25" xml:space="preserve">
+    <value>Invalid recipients [25]</value>
+    <comment>Invalid recipients [25]</comment>
+  </data>
+  <data name="MAPI_MSG_26" xml:space="preserve">
+    <value>Not supported [26]</value>
+    <comment>Not supported [26]</comment>
+  </data>
+</root>

@@ -5,7 +5,7 @@ using System.Text;
 
 using LythumOSL.Core.Metadata;
 
-namespace Lythum.Core.Data.DataTypes
+namespace LythumOSL.Core.Data.DataTypes
 {
 	public class LoginInfo : ILoginInfo
 	{

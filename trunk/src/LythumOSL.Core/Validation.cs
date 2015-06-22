@@ -39,7 +39,7 @@ namespace LythumOSL.Core
 		{
 			RequireValidString (parameter, parameterName);
 
-			if (!Lythum.Core.Helpers.IsNumeric (parameter))
+			if (!LythumOSL.Core.Helpers.IsNumeric (parameter))
 			{
 				throw new LythumException (string.Format (
 					Resources.Errors.StringMustBeNumeric1,

@@ -5,7 +5,7 @@ using System.Text;
 using System.Globalization;
 using System.Windows.Data;
 
-namespace LythumOSL.Core.Data.Converters
+namespace LythumOSL.Wpf.Converters
 {
 	public class NullComboConverter : IValueConverter
 	{

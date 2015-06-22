@@ -105,7 +105,7 @@ namespace LythumOSL.Core.Data
 			bool first = (firstRowIsHeader ? true : false);
 
 			foreach (
-				string line in Lythum.Core.IO.File.ReadLines (file, encoding))
+				string line in LythumOSL.Core.IO.File.ReadLines (file, encoding))
 			{
 				if (line.Length > 0)
 				{

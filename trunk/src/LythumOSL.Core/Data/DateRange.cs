@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using LythumOSL.Core.Metadata;
-
 namespace LythumOSL.Core.Data
 {
-	public class DateRange : ILythumBase
+	public class DateRange : LythumOSL.Core.Metadata.ILythumBase
 	{
 		public enum DateRanges
 		{
