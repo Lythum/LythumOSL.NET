@@ -6,7 +6,7 @@ namespace LythumOSL.Core.Metadata
 {
 	public interface IErrorInfo : ILythumBase
 	{
-		bool IsError { get; }
+		bool HasError { get; }
 		string ErrorText { get; }
 		Exception ErrorException { get; }
 

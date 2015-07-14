@@ -29,7 +29,7 @@ namespace LythumOSL.Core
 
 		#region IErrorInfo Members
 
-		public bool IsError
+		public bool HasError
 		{
 			get { return _ErrorException!=null; }
 		}
@@ -38,7 +38,7 @@ namespace LythumOSL.Core
 		{
 			get
 			{
-				if (IsError)
+				if (HasError)
 				{
 					return _ErrorException.Message;
 				}
@@ -62,7 +62,7 @@ namespace LythumOSL.Core
 		/// </summary>
 		public void Error()
 		{
-			if (IsError)
+			if (HasError)
 			{
 				_ErrorException = null;
 			}

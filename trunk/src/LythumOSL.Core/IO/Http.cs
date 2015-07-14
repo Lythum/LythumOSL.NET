@@ -42,7 +42,7 @@ namespace LythumOSL.Core.IO
 				Error(ex);
 			}
 
-			return IsError;
+			return HasError;
 		}
 
 		public bool UploadFile(string url, string fileToUpload)
@@ -69,7 +69,7 @@ namespace LythumOSL.Core.IO
 				Error(ex);
 			}
 
-			return IsError;
+			return HasError;
 		}
 
 		public bool UploadFile(string url, string fileToUpload, HttpMethod method)
@@ -99,7 +99,7 @@ namespace LythumOSL.Core.IO
 				Error(ex);
 			}
 
-			return IsError;
+			return HasError;
 		}
 
 		#endregion

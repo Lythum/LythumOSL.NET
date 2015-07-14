@@ -126,6 +126,7 @@
     <Compile Include="Metadata\IProgressMessenger.cs" />
     <Compile Include="Metadata\IQueriesHolder.cs" />
     <Compile Include="Metadata\ISelector.cs" />
+    <Compile Include="Net\SimpleFtp.cs" />
     <Compile Include="Net\Http\HttpAccess.cs" />
     <Compile Include="Net\Http\HttpAttributes.cs" />
     <Compile Include="Net\Http\HttpProxySettings.cs" />

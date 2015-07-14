@@ -70,6 +70,10 @@
     <Compile Include="Controls\DateRangeControl.xaml.cs">
       <DependentUpon>DateRangeControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\LogViewer.xaml.cs">
+      <DependentUpon>LogViewer.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Controls\LythumPropertyGrid\LythumPropertyGrid.xaml.cs">
       <DependentUpon>LythumPropertyGrid.xaml</DependentUpon>
     </Compile>
@@ -128,6 +132,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Controls\LogViewer.xaml" />
     <Page Include="Controls\LythumPropertyGrid\LythumPropertyGrid.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

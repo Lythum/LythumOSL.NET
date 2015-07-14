@@ -20,19 +20,6 @@ If you see that those libraries are good for you. You can use them as well. Just
 In long run, developing those libraries i've used a lot of various information from internet, stackechange, code project and etc... And they include a lot of working solutions, where i often used knowledge of other developers. 
 
 
-Concept of development using LythumOSL
-==============================
-
-I always had oposite opinion regarding some popular technical ideologies, concepts. As in today world we need more and more developers and in many cases technologies starting to be more and more complex. Requires more and more code to achieve solution. My concept is similar which is used in Army. As better man is armed as more he can do alone. Eg. if to give to soldier assault rifle, he can fight against several enemies. If to give to him machinegun, he can fight against much more enemies rather than with assault rifle. 
-
-Similar concept is here. To make strong system core, which solve most of technical stuff and you don't need eg. every time to initialize SQLConnections or SQLCommands when you access database and etc.. To write your software business logic parts with as possible less lines of code. That code was as possible smaller, where all functionality is hidden in core libraries.
-
-Better all bugs will be in libraries and will be fixed at once with some fix, rather than copy-pasted in whole solution million of times... 
-
-And this concept required to do solutions which in some cases are against current popular or best practices software engineering solutions and concepts. 
-
-I don't care what do they think. As for me priority is to not waste to much of time on achievement of solution. To make, that single developer was able to work efficient and even to rival solo with software development companies. That he not needed to waste to much of time on technologies or their implementation. But it required much more of work in libraries side.
-
 TODO:
 =======
 Still strong code review is needed. As some classes was researched and not used at the end at ll. As i've found eg. different solution.  And some portions of code are commented instead of removal. Maybe should be good to cleanup them.

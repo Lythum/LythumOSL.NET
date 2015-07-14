@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+	x:Class="LythumOSL.UI.Controls.LogViewer" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:toolkit="http://schemas.microsoft.com/wpf/2008/toolkit"
+	Background="#FFFFFFE1">
+	<Grid>
+		<DockPanel
+			LastChildFill="True">
+			<StackPanel
+				Orientation="Horizontal"
+				DockPanel.Dock="Top"
+				Margin="5" Visibility="Collapsed" >
+				<TextBlock
+					Text="Current log level  " />
+				<ComboBox
+					x:Name="CmbLogLevel" />
+			</StackPanel>
+			<toolkit:DataGrid
+				x:Name="DgrMain">
+				<toolkit:DataGrid.Columns>
+					<toolkit:DataGridTextColumn
+						Header="Level"
+						Binding="{Binding Path=Delay, Mode=TwoWay}"
+						IsReadOnly="True"
+						Width="40" />
+					<toolkit:DataGridTextColumn
+						Header="Time"
+						Binding="{Binding Path=File, Mode=TwoWay}"
+						IsReadOnly="True"
+						Width="80" />
+					<toolkit:DataGridTextColumn
+						Header="Message"
+						Binding="{Binding Path=Delay, Mode=TwoWay}"
+						IsReadOnly="True"
+						Width="300" />
+				</toolkit:DataGrid.Columns>
+			</toolkit:DataGrid>
+		</DockPanel>
+	</Grid>
+</UserControl>
