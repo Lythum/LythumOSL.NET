@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LythumOSL.Core", "LythumOSL.Core\LythumOSL.Core.csproj", "{D144BD73-961D-4E32-BD90-4958B6BC41AE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LythumOSL.Wpf", "LythumOSL.Wpf\LythumOSL.Wpf.csproj", "{4DA727EE-857C-42F5-8C22-A6C9763DA112}"
